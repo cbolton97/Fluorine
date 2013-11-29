@@ -1,4 +1,4 @@
-Flourine - Companion Project to Argon!
+Fluorine - Companion Project to Argon!
 ======================================
 
 Welcome to Fluorine, a playground of sorts to further help the development of Argon.
