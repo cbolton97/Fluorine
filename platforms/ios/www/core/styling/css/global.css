@@ -1,0 +1,17 @@
+﻿html, body {
+    margin:0;
+    padding:0;
+    background:#EEE;
+    width:100%;
+    height:100%;
+}
+.global_header {
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    width:50%;
+    font:250% sans-serif;
+    color:#EEE;
+    background:#333;
+    text-align:center;
+}
