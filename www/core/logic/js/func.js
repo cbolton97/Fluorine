@@ -1,23 +1,29 @@
-﻿function sendMessage(request) {
-    console.log(request);
-    $.getJSON('core/logic/js/db/dates.json', function (data) {
-        var dates = data.dates;
-        var requestedData = _.filter(dates, function (item) {
-            return _.contains(item, request);
-        });
-        $('._output').append(requestedData[0].message + "<br />");
-    });
-}
-$('._nav a').click(function (e) {
-    var requestedMessage = $(this).attr('href');
-    switch (requestedMessage) {
+﻿$('._header_nav a').click(function (e) {
+    var requestedAction = $(this).attr('href');
+    switch (requestedAction) {
         case "today_date":
-            sendMessage(today_date);
+            dbAction("dates", "dates", today_date, "._console");
             break;
         case "tomorrow_date":
-            sendMessage(tomorrow_date);
+            dbAction("dates", "dates", tomorrow_date, "._console");
             break;
     }
     e.preventDefault();
 });
+
+function dbAction(db, target, data, location) {
+    $.getJSON('core/logic/js/db/' + db + '.json', function (db) {
+        var object = _.find(db, function (item, key) {
+            return key === target;
+        });
+        console.log(object);
+       var  output = _.find(object, function (item) {
+           return _.contains(item, data);
+        });
+       post(location, output.data);
+    });
+}
+function post(location, data) {
+    $(location).append("<span>"+ data + "</span>");
+}
 
