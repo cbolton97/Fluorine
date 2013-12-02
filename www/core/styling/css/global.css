@@ -14,17 +14,19 @@
 }
 .global_header {
     display:block;
+    position:fixed;
     margin:auto;
     padding:0;
     width:100%;
     color:#EEE;
     background:#333;
+    z-index:1;
 }
 .header_text {
     display:block;
-    padding:7px 5px;
+    padding:5px;
     float:left;
-    font:170% sans-serif;
+    font:160% sans-serif;
 }
 .header_nav {
     display:block;
@@ -35,19 +37,23 @@
     .header_nav a {
         display:inline-block;
         padding:5px;
-        font:100% sans-serif;
+        font:90% sans-serif;
         text-decoration:none;
         color:#EEE;
         width:65px;
         text-align:center;
         background:#444;
+        outline:none;
     }
+.console_container{
+    padding:65px 0 15px 0;
+}
 .console {
-    display:block;
-    margin:10px auto;
-    padding:5px;
+    margin:auto;
+    position:relative;
+    padding:0 5px;
     width:95%;
-    min-height:500px;
+    min-height:300px;
     background:#FFF;
     border-radius:5px;
     box-shadow:0 5px 10px #888;
