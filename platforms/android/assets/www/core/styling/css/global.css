@@ -1,14 +1,64 @@
 ﻿html, body {
     margin:0;
     padding:0;
-    background:#EEE;
+    background:#EBEBEB;
+    width:100%;
+    height:100%;
+}
+.clear {
+    clear:both;
+}
+.main {
+    display:block;
+    margin:0 auto 20px auto;
 }
 .global_header {
     display:block;
-    margin:10px;
-    padding:10px;
-    font:140% sans-serif;
+    position:fixed;
+    margin:auto;
+    padding:0;
+    width:100%;
     color:#EEE;
     background:#333;
-    text-align:center;
+    z-index:1;
 }
+.header_text {
+    display:block;
+    padding:5px;
+    float:left;
+    font:160% sans-serif;
+}
+.header_nav {
+    display:block;
+    padding:0 10px;
+    float:right;
+    
+}
+    .header_nav a {
+        display:inline-block;
+        padding:5px;
+        font:90% sans-serif;
+        text-decoration:none;
+        color:#EEE;
+        width:65px;
+        text-align:center;
+        background:#444;
+        outline:none;
+    }
+.console_container{
+    padding:65px 0 15px 0;
+}
+.console {
+    margin:auto;
+    position:relative;
+    padding:0 5px;
+    width:95%;
+    min-height:300px;
+    background:#FFF;
+    border-radius:5px;
+    box-shadow:0 5px 10px #888;
+    font:100% monospace, sans-serif;
+}
+    .console span {
+        display:block;
+    }

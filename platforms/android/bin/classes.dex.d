@@ -1,0 +1,25 @@
+/Users/user/Dev/Fluorine/platforms/android/bin/classes.dex : \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/BuildConfig.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/Fluorine.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/R$attr.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/R$drawable.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/R$string.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/R$xml.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/com/codeandconfusion/fluorine/R.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/device/Device$1.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/device/Device.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$1.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$2.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$3.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$4.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$1.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$2.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$3.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$4.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$5.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$5.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppBrowser.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/classes/org/apache/cordova/splashscreen/SplashScreen.class \
+/Users/user/Dev/Fluorine/platforms/android/bin/dexedLibs/cordova-3.1.0-4e30b552afa52c54a12ec385e480fa30.jar \

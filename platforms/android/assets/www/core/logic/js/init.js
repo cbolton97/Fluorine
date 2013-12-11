@@ -5,7 +5,7 @@ app.initialize();
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-    console.log("phonegap is ready");
+    $('._console').append("<span>Phonegap is ready</span>");
 }
 //init fastClick
 $(function () {
