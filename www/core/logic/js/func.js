@@ -27,6 +27,6 @@ function post(location, data) {
     $(location).append("<span>"+ data + "</span>");
 }
 $("#link").click(function (event) {
-    var ref = window.open('http://google.com', '_blank', 'location=yes');
+    var ref = window.open('http://google.com', '_blank', 'location=no');
     event.preventDefault();
 });
