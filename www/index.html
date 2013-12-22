@@ -1,39 +1,109 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
-        <link rel="stylesheet" href="core/styling/css/global.css" />
-        <title>Fluorine</title>
-    </head>
-    <body>
+		<title>WS Timetable</title>
+		<link rel="stylesheet" href="core/styling/css/main.css" />
+		<link rel="stylesheet" href="core/styling/css/schedule-style.css" />
+	</head>
+	<body>
+        
         <div class="app">
-            <div class="main _main">
-                <div class="global_header _global_header">
-                    <span class="header_text _header_text">Fluorine</span>
-                    <span class="header_nav _header_nav">
-                        <a id="link">Test Browser</a>
-                        <a href="today_date">Test today</a>
-                        <a href="tomorrow_date">Test tomorrow</a>
-                    </span>
-                    <div class="clear"></div>
+            <div id="wrapper">
+                <!-- global header -->
+                <div class="fixed wrapper-element" id="wrapper-header">
+                    <div id="wrapper-hero">
+                        <div class="header-logo">
+                            
+                        </div>
+                        <div class="header-actions">
+                            <a href="" class="header-refresh"></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- global nav -->
+                    <div id="wrapper-nav">
+                        <ul>
+                            <a href="rotation"><li>Rotation</li></a>
+                            <a href="staff"><li>Staff</li></a>
+                            <a href="blogs"><li>Blogs</li></a>
+                            <a href="about"><li>About</li></a>
+                        </ul>
+                    </div>
                 </div>
-                <div class="console_container">
-                    <div class="console _console">
+                <!-- 'pages' are created here -->
+                
+                <div class="wrapper-element" id="content-container">
+                    <!-- 'rotation' -->
+                    <div class="content-element rotation">
+                        <div id="timetable-today-loader">
+
+                        </div>
+                        <div id="timetable-tomorrow-loader">
+
+                        </div>
+                    </div>
+                    <!-- 'staff' -->
+                    <div class="content-element staff">
+                        <span class="content-header">Administration Staff</span>
+                        <div class="content-container list-container">
+                            <ul class="admin-list-data list-data"></ul>
+                        </div>
+                        <span class="content-header">Teaching Staff</span>
+                        <div class="content-container list-container">
+                            <ul class="teachers-list-data list-data"></ul>
+                        </div>
+                        <span class="content-header">Support Staff</span>
+                        <div class="content-container list-container">
+                            <ul class="support-list-data list-data"></ul>
+                        </div>
 
                     </div>
+                    <!-- 'blogs' -->
+                    <div class="content-element blogs">
+                        <span class="content-header">School Blogs</span>
+                        <div class="content-container list-container">
+                            <ul class="blogs-list-data list-data"></ul>
+                        </div>
+                    
+                    </div>
+                    <!-- 'about' -->
+                    <div class="content-element about">
+                        <div class="content-container version-container">
+                            <span class="app-title">
+                                The Unofficial App of Windsor Secondary
+                            </span>
+                            <span class="current-version-pre">
+                                Version:
+                            </span>
+                            <span class="current-version"></span>
+                        </div>
+                        <div class="content-container app-desc">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="content-container app-contact">
+                            <span class="app-review"></span>
+                            <span class="app-twitter"></span>
+                            <span class="app-email"></span>
+                        </div>
+                        <div class="app-dev">
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="core/logic/js/lib/cordova/index.js"></script>
-        <script type="text/javascript" src="core/logic/js/lib/jquery/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="core/logic/js/lib/fastClick/fastClick.js"></script>
-        <script type="text/javascript" src="core/logic/js/lib/underscore/underscore-min.js"></script>
-
-        <script type="text/javascript" src="core/logic/js/init.js"></script>
-        <script type="text/javascript" src="core/logic/js/func.js"></script>
-      
+        <!-- maybe in the future I should condense this list... -->
+        <script src="core/logic/js/lib/jquery/jquery-1.10.2.min.js"></script>
+        <script src="core/logic/js/lib/underscore/underscore-min.js"></script>
+        <script src="core/logic/js/scripts/prereq.js"></script>
+        <script src="core/logic/js/scripts/loader.js"></script>
+        <script src="core/logic/js/scripts/pages.js"></script>
+        <script src="core/logic/js/scripts/func.js"></script>
+        <script src="core/logic/js/scripts/init.js"></script>
     </body>
 </html>

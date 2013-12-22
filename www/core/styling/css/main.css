@@ -1,0 +1,177 @@
+html,
+body{
+	margin:0;
+	padding:0 0 10px 0;
+	width:100%;
+    height:100%;
+	background:#EEE;
+}
+a {
+    outline:none;
+}
+.clear{
+	clear:both;
+}
+.fixed{
+	position:fixed;
+}
+.wrapper-element{
+	z-index:100;
+}
+#wrapper-header{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;
+	background:#007F0E;
+	box-shadow:0 1px 5px #222;
+}
+.header-logo{
+    float:left;
+    margin:0 -7px;
+    width:62.4px;
+    height:46.8px;
+    background:url('../images/LogoHeader.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.header-actions {
+    margin:0;
+    float:right;
+    background-color:#00990F;
+
+}
+.header-refresh {
+    display:block;
+    margin:8px;
+    width:30px;
+    height:30px;
+    background-image:url('../images/refresh-white.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+#wrapper-header-text{
+	text-align:left;
+}
+#wrapper-header-title{
+	margin:0 15px;
+	padding:0;
+	color:#FFF;
+	font:200% georgia, serif;
+	color:#FFF;
+	letter-spacing:4px;
+}
+#wrapper-header-sub{
+	margin-top:-3px;
+}
+.header-sub{
+	margin:0;
+	padding:0 1em 0 2px;
+	display:inline;
+	color:#FFF;
+	font:80% georgia, serif;
+	color:#FFF;
+}
+#wrapper-nav{
+	margin:0;
+	padding:0;
+	left:0;
+	width:100%;
+	height:35px;
+	background:#333;
+}
+#wrapper-nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+	height:100%;
+}
+#wrapper-nav ul a{
+	margin:0;
+	padding:0;
+	display:inline-block;
+	width:24%;
+	height:100%;
+	text-decoration:none;
+	color:#FFF;
+	font:80% sans-serif;
+	text-transform:uppercase;
+	
+}
+#wrapper-nav ul a li{
+	margin:10px 0;
+	padding:0;
+	display:inline-block;
+}
+#content-container{
+	margin:0;
+	padding:5.2em 0 0 0;
+}
+.content-header {
+    display:block;
+    margin:15px 5px 5px 5px;
+	padding:0;
+	font:90% "robot light" sans-serif;
+	color:#007F0E;
+}
+.content-container {
+    margin:-10px auto 0 auto;
+	padding:0;
+	width:95%;
+	background:#FFF;
+	border-radius:3px;
+	box-shadow:0px 3px 5px #CCC;
+
+}
+.content-container ul {
+    list-style-type:none;
+    padding:10px;
+}
+.content-container ul li {
+    display:block;
+    margin:0 0 10px 0;
+    clear:both;
+
+}
+
+.item-title {
+    font:bold 100% "robot light" sans-serif;
+    color:#333;
+}
+
+.item-name {
+    font:100% "robot light" sans-serif;
+    color:#333;
+
+}
+.item-email {
+    font:90% "robot light" sans-serif;
+    color:#007F0E;
+    text-decoration:none;
+}
+.item-web {
+    font:90% "robot light" sans-serif;
+    color:#007F0E;
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
