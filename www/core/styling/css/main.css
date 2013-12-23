@@ -8,6 +8,7 @@ body{
 }
 a {
     outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 .clear{
 	clear:both;
@@ -24,29 +25,31 @@ a {
 	width:100%;
 	height:auto;
 	background:#007F0E;
-	box-shadow:0 1px 5px #222;
+    border-bottom:3px solid #252525;
+	/*box-shadow:0 1px 5px #222;*/
 }
 .header-logo{
-    float:left;
-    margin:0 -7px;
-    width:62.4px;
-    height:46.8px;
-    background:url('../images/LogoHeader.png');
+    position:absolute;
+    left:50%;
+    margin:1px auto 1px -19px;
+    width:38px;
+    height:45px;
+    background:url('../images/LogoHeader-fixed.png');
     background-repeat:no-repeat;
     background-size:contain;
 }
 .header-actions {
     margin:0;
     float:right;
-    background-color:#00990F;
+    
 
 }
 .header-refresh {
     display:block;
     margin:8px;
-    width:30px;
-    height:30px;
-    background-image:url('../images/refresh-white.png');
+    width:32px;
+    height:32px;
+    background-image:url('../images/ic_action_refresh.png');
     background-repeat:no-repeat;
     background-size:contain;
 }
@@ -107,6 +110,7 @@ a {
 #content-container{
 	margin:0;
 	padding:5.2em 0 0 0;
+    -webkit-overflow-scrolling: touch;
 }
 .content-header {
     display:block;
@@ -155,7 +159,7 @@ a {
     color:#007F0E;
     text-decoration:none;
 }
-
+/* Color Palette*/
 
 
 

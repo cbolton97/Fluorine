@@ -1,4 +1,12 @@
-﻿//global used to determine user input type ie touchstart
+﻿//phonegap watching for app resume
+document.addEventListener("resume", onResume, false);
+function onResume() {
+    setTimeout(function () {
+        var page = $('.header-refresh').attr('href');
+        loadPage(page, "resume");
+    }, 0);
+}
+//global used to determine user input type ie touchstart
 var trigger = "click";
 
 //creates time, space, and quite possibly the universe.
@@ -66,13 +74,15 @@ $('.header-refresh').bind(trigger, function (event) {
     loadPage(refreshTarget, "refresh button");
     $('.header-refresh').animateRotate(360, 1000, "linear");
     event.preventDefault();
+    event.returnValue = false;
 });
 
 
 //watches lists for web links and parses them with phonegap code
 $('.list-data').on(trigger, '.item-web', function (event) {
     var link = $(this).attr('href');
-    window.open(link);
+    var ref = window.open(link, '_system', 'location=yes');
     //insert InAppBrowser code for phonegap.
     event.preventDefault();
+    event.returnValue = false;
 });
