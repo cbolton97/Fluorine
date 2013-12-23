@@ -1,0 +1,34 @@
+﻿{
+"title":"Blogs",
+"content":"Current Windsor blogs.",
+"blogs":[
+	{
+		"name":"Dukes Athletics",
+		"website":"http://dukesathletics.ca/"
+	},
+	{
+		"name":"Work Experience",
+		"website":"http://windsorworkexperience.blogspot.ca/"
+	},
+	{
+		"name":"Graduating Class",
+		"website":"http://windsorgradinfo.webs.com/"
+	},
+	{
+		"name":"Library",
+		"website":"http://windsorlibrary.wikispaces.com/"
+	},
+	{
+		"name":"Choir",
+		"website":"http://dukesathletics.ca/"
+	},
+	{
+		"name":"Music",
+		"website":"http://windsormusic.weebly.com/"
+	},
+	{
+		"name":"Arts",
+		"website":"http://studiozwindsor.com/"
+	}
+]
+}

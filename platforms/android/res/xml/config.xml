@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.codeandconfusion.fluorine" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>TBA</name>
+    <name>Hello Cordova</name>
     <description>
-        A timetable app for students of Windsor Secondary.
+        A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <access origin="*" />
     <preference name="loglevel" value="DEBUG" />

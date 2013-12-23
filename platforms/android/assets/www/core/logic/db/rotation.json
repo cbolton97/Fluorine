@@ -1,0 +1,22 @@
+{
+"title":"rotation",
+"content":"Hi, Rotation!",
+"rotations":[
+	
+	{
+		"date":"December 21, 2013",
+		"structure":"normal",
+		"order":"3"
+	},
+	{
+		"date":"December 22, 2013",
+		"structure":"normal",
+		"order":"7"
+	},
+	{
+		"date":"December 23, 2013",
+		"structure":"normal",
+		"order":"6"
+	}
+	
+]}

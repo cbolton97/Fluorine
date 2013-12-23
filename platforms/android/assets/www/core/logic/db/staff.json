@@ -1,0 +1,100 @@
+﻿{
+"title":"Staff",
+"content":"List of staff members at Windsor Secondary",
+"admin":[
+	
+	{
+		"name":"Mr. A. Baumann",
+		"title":"Principal",
+		"email":"abaumann@sd44.ca"
+	},
+	{
+		"name":"Ms. M. Learoyd",
+		"title":"Vice Principal",
+		"email":"mlearoyd@sd44.ca"
+	},
+	{
+		"name":"Mr. W. Mustapich",
+		"title":"Vice Principal",
+		"email":"wmustapich@sd44.ca"
+	},
+	{
+		"name":"Ms. N. Cramer",
+		"title":"Admin Assistant",
+		"email":"ncramer@sd44.ca"
+	},
+	{
+		"name":"Mr. R. Pepper",
+		"title":"Records Clerk",
+		"email":"rpepper@sd44.ca"
+	}
+
+	
+],
+"teachers":[
+	{
+		"name":"Ms. A. Akehurst",
+		"website":"http://aakehurst.weebly.com/",
+		"email":"aakehurst@sd44.ca"
+	},
+	{
+		"name":"Ms. A. Bennett Fox​",
+		"email":"abennettfox@sd44.ca​"
+	},
+	{
+		"name":"Ms. S. Best",
+		"email":"sbest@sd44.ca"
+	},
+	{
+		"name":"Ms. K. Black",
+		"email":"aakehurst@sd44.ca"
+	},
+	{
+		"name":"Ms. C. Bradshaw",
+		"website":"http://www.sd44.ca/school/windsor/ProgramsServices/Courses/Languages/Pages/default.aspx",
+		"email":"cbradshaw@sd44.ca"
+	},
+	{
+		"name":"Ms. A. Budd",
+		"website":"http://senorabudd.wordpress.com/",
+		"email":"abudd@sd44.ca"
+	},
+		{
+		"name":"Mr. M Burnett",
+		"email":"mburnett@sd44.ca"
+	},
+		{
+		"name":"Mr. T. Crowther",
+		"website":"http://tcrow.wordpress.com/",
+		"email":"tcrowther@sd44.ca"
+	},
+		{
+		"name":"Mr C. Dang",
+		"email":"cdang@sd44.ca"
+	},
+	{
+		"name":"Mr. R. Deleurme",
+		"website":"http://deleurmemath.pbworks.com/w/page/3970141/FrontPage",
+		"email":"rdeleurme@sd44.ca"
+	},
+	{
+		"name":"Ms. N. Deminger",
+		"email":"ndeminger@sd44.ca"
+	},
+	{
+		"name":"Ms. J. Drew",
+		"email":"jdrew@sd44.ca"
+	}
+
+
+],
+
+"support":[
+	{
+		"name":"Ms. Celeste Lee",
+		"title":"Career Education Facilitator",
+		"website":"http://windsorworkexperience.blogspot.ca/",
+		"email":"clee@sd44.ca"
+	}
+]
+}
