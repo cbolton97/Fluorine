@@ -31,8 +31,14 @@ var trigger = "click";
 document.addEventListener("resume", onResume, false);
 function onResume() {
     setTimeout(function () {
-        var requestedLayer = $('.action-refresh').attr('href');
-        core["routeLayer"]("refresh", requestedLayer);
+        var request = $('.action-refresh').attr('href'),
+           sliceOrig = request.search(">"),
+           sliceDest = request.search(","),
+           origin = request.slice(0, sliceOrig).trim();
+        destination = request.slice(sliceOrig + 1, sliceDest).trim(),
+        data = request.slice(sliceDest + 1).trim();
+        console.log(request);
+        core[destination](origin, data);
     }, 0);
 }
 //animation plugin for refresh button
@@ -329,8 +335,14 @@ var currentLayer,
 
         },
         backbttn: function () {
-            var requestedLayer = $('.action-back').attr('href');
-            core["routeLayer"]("pop", requestedLayer);
+           var request = $('.action-back').attr('href'),
+           sliceOrig = request.search(">"),
+           sliceDest = request.search(","),
+           origin = request.slice(0, sliceOrig).trim();
+            destination = request.slice(sliceOrig + 1, sliceDest).trim(),
+            data = request.slice(sliceDest + 1).trim();
+            console.log(request);
+            core[destination](origin, data);
         }
     },
     helper = {
