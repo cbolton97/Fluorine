@@ -1,110 +1,158 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
-		<title>WS Timetable</title>
-		<link rel="stylesheet" href="core/styling/css/main.css" />
-		<link rel="stylesheet" href="core/styling/css/schedule-style.css" />
-	</head>
-	<body>
-        
-        <div class="app">
-            <div id="wrapper">
-                <!-- global header -->
-                <div class="fixed wrapper-element" id="wrapper-header">
-                    <div id="wrapper-hero">
-                        <div class="header-logo">
-                            
-                        </div>
-                        <div class="header-actions">
-                            <a href="" class="header-refresh"></a>
-                        </div>
-                        <div class="clear"></div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
+    <title>WS Timetable</title>
+    <link rel="stylesheet" type="text/css" href="core/styling/css/overrides.css" />
+    <link rel="stylesheet" type="text/css" href="core/styling/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="core/styling/css/schedule-style.css" />
+    <link rel="stylesheet" type="text/css" href="core/styling/css/main_v2.css" />
+
+</head>
+<body>
+
+    <div class="app">
+        <div id="wrapper">
+            <!-- global header -->
+
+            <div class="fixed wrapper-element" id="wrapper-header">
+                <div class="header-container">
+                    <a href="" class="content-element action-back route-initiator"></a>
+                    <div class="logo-container">
+                        <div class="header-logo"> </div>
                     </div>
-                    <!-- global nav -->
-                    <div id="wrapper-nav">
-                        <ul>
-                            <a href="rotation"><li>Rotation</li></a>
-                            <a href="staff"><li>Staff</li></a>
-                            <a href="blogs"><li>Blogs</li></a>
-                            <a href="about"><li>About</li></a>
-                        </ul>
+                    <div class="header-actions">
+                        <a href="" class="action-refresh route-initiator"></a>
                     </div>
+                    <div class="clear"></div>
                 </div>
-                <!-- 'pages' are created here -->
-                
-                <div class="wrapper-element" id="content-container">
-                    <!-- 'rotation' -->
-                    <div class="content-element rotation">
-                        <div id="timetable-today-loader">
-
-                        </div>
-                        <div id="timetable-tomorrow-loader">
-
-                        </div>
-                    </div>
-                    <!-- 'staff' -->
-                    <div class="content-element staff">
-                        <span class="content-header">Administration Staff</span>
-                        <div class="content-container list-container">
-                            <ul class="admin-list-data list-data"></ul>
-                        </div>
-                        <span class="content-header">Teaching Staff</span>
-                        <div class="content-container list-container">
-                            <ul class="teachers-list-data list-data"></ul>
-                        </div>
-                        <span class="content-header">Support Staff</span>
-                        <div class="content-container list-container">
-                            <ul class="support-list-data list-data"></ul>
-                        </div>
-
-                    </div>
-                    <!-- 'blogs' -->
-                    <div class="content-element blogs">
-                        <span class="content-header">School Blogs</span>
-                        <div class="content-container list-container">
-                            <ul class="blogs-list-data list-data"></ul>
-                        </div>
-                    
-                    </div>
-                    <!-- 'about' -->
-                    <div class="content-element about">
-                        <div class="content-container version-container">
-                            <span class="app-title">
-                                The Unofficial App of Windsor Secondary
-                            </span>
-                            <span class="current-version-pre">
-                                Version:
-                            </span>
-                            <span class="current-version"></span>
-                        </div>
-                        <div class="content-container app-desc">
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="content-container app-contact">
-                            <span class="app-review"></span>
-                            <span class="app-twitter"></span>
-                            <span class="app-email"></span>
-                        </div>
-                        <div class="app-dev">
-                            
-                        </div>
-                    </div>
-
+                <!-- global nav -->
+                <div id="wrapper-nav" >
+                    <ul>
+                        <a class="font-light route-initiator" href="nav > routeLayer, Week_View"><li>Rotation</li></a>
+                        <a class="font-light route-initiator" href="nav > routeLayer, Staff_List_View"><li>Staff</li></a>
+                        <a class="font-light route-initiator" href="nav > routeLayer, Discover_List_View"><li>Discover</li></a>
+                        <a class="font-light route-initiator" href="nav > routeLayer, About_View"><li>About</li></a>
+                    </ul>
                 </div>
             </div>
+            <!-- 'pages' are created here -->
+
+            <div class="wrapper-element" id="content-container">
+
+            <!--TEST PAGES-->
+
+                <div class="content-element router">
+                    <div id="Rotation" class="page-container">
+                        <div id="Week_View" class="layer-container">
+                            <div class="week-data-loader">
+                            </div>
+                        </div>
+                        <div id="Day_View" class="layer-container">
+                            <div class="day-data-loader">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div id="Staff" class="page-container">
+                        <div id="Staff_List_View" class="layer-container ">
+                            <div class="content-header">
+                                <span class="font-light">Administration Staff</span>
+                            </div>
+                            <div class="content-container list-container staff-list">
+                                <ul class="admin-list-data web-data list-data"></ul>
+                            </div>
+                            <div class="content-header">
+                                <span class="font-light">Teaching Staff</span>
+                            </div>
+                            <div class="content-container list-container staff-list">
+                                <ul class="teachers-list-data web-data list-data"></ul>
+                            </div>
+                            <div class="content-header">
+                                <span class="font-light">Support Staff</span>
+                            </div>
+                            <div class="content-container list-container staff-list">
+                                <ul class="support-list-data web-data list-data"></ul>
+                            </div>
+                        </div>
+                        <div id="Staff_Info_View" class="layer-container ">
+                            <div class="content-header">
+                                <span class="font-light"></span>
+                            </div>
+                            <a class="font-light route-initiator" href="pop > routeLayer, Staff_List_View">< Go Back</a>
+                        </div>
+                    </div>
+                    <div id="Discover" class="page-container">
+                        <div id="Discover_List_View" class="layer-container ">
+                            <div class="content-header">
+                                <span class="font-light">Academics</span>
+                            </div>
+                            <div class="content-container list-container">
+                                <ul class="academics-list-data web-data list-data"></ul>
+                            </div>
+                            <div class="content-header">
+                                <span class="font-light">Athletics</span>
+                            </div>
+                            <div class="content-container list-container">
+                                <ul class="athletics-list-data web-data list-data"></ul>
+                            </div>
+                            <div class="content-header">
+                                <span class="font-light">Arts</span>
+                            </div>
+                            <div class="content-container list-container">
+                                <ul class="arts-list-data web-data list-data"></ul>
+                            </div>
+                            <div class="content-header">
+                                <span class="font-light">Work Experience</span>
+                            </div>
+                            <div class="content-container list-container">
+                                <ul class="workexperience-list-data web-data list-data"></ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="About" class="page-container">
+                            <div id="About_View" class="layer-container ">
+                                <span class="font-thin app-title">
+                                    The Unofficial App of Windsor Secondary
+                                </span>
+                                <div class="content-container app-desc">
+                                    <span class="font-light desc">
+                                        WS Companion provides Windsor Secondary Students with essential information regarding
+                                        class timetables, teacher contact information, and important sites and blogs maintained by SD44 staff.
+                                        WS Companion is in no way maintained by the North Vancouver School District or Windsor Secondary.
+                                    </span>
+                                    <span class="font-light author">Developed by Chris Bolton, Windsor Secondary student</span>
+                                </div>
+                                <div class="content-container app-contact web-data">
+                                    <span class="desc font-light">Feature suggestions, bug reports, or other feedback is welcomed.</span>
+                                    <a href="mailto:codeandconfusion@gmail.com" class="font-light route-initiator app-email">Support Email</a>
+                                    <a href="http://codeandconfusion.tumblr.com" class="font-light route-initiator app-tumblr item-web">Development Blog</a>
+                                    <a href="http://twitter.com/cbolton97" class="font-light route-initiator app-twitter item-web">@cbolton97</a>
+                                </div>
+                                <div class="app-dev">
+                                    <span class="font-light current-version-pre">
+                                        Version:
+                                    </span>
+                                    <span class="font-thin current-version"></span>
+                                    <span class="font-light legal">&#169; Chris Bolton 2014</span>
+                                    <span class="font-light legal">"Windsor Secondary Crest" is a trademark of the North Vancouver School District.</span>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <!-- maybe in the future I should condense this list... -->
-        <script src="cordova.js"></script>
-        <script src="core/logic/js/lib/jquery/jquery-1.10.2.min.js"></script>
-        <script src="core/logic/js/lib/underscore/underscore-min.js"></script>
-        <script src="core/logic/js/scripts/prereq.js"></script>
-        <script src="core/logic/js/scripts/loader.js"></script>
-        <script src="core/logic/js/scripts/pages.js"></script>
-        <script src="core/logic/js/scripts/func.js"></script>
-        <script src="core/logic/js/scripts/init.js"></script>
-    </body>
+    <!-- maybe in the future I should condense this list... -->
+    <script src="cordova.js"></script>
+    <script src="core/logic/js/lib/jquery/jquery-1.10.2.min.js"></script>
+    <script src="core/logic/js/lib/underscore/underscore-min.js"></script>
+    <script src="core/logic/js/lib/swipeview/swipeview.js"></script>
+    <script src="core/logic/js/scripts/router.js"></script>
+</body>
 </html>

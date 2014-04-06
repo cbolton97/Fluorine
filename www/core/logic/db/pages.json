@@ -1,0 +1,25 @@
+﻿{
+   "Stacks":[
+      {
+         "page":"Rotation",
+         "layer_0":"Week_View",
+         "layer_1":"Day_View"
+      },
+      {
+         "page":"Staff",
+         "layer_0":"Staff_List_View",
+         "layer_1":"Staff_Info_View"
+      },
+      {
+         "page":"Discover",
+         "layer_0":"Discover_List_View",
+         "layer_1":"Site_Info_View",
+         "layer_2":"Site_RSS_View"
+      },
+      {
+         "page":"About",
+         "layer_0":"About_View",
+         "layer_1":"Feedback_View"
+      }
+   ]
+}

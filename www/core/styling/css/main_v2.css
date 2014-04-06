@@ -1,0 +1,90 @@
+﻿.content-article{
+    display:block;
+    margin:10px auto;
+    padding:0;
+    width:95%;
+    background:#FFF;
+    border-radius:5px;
+    text-decoration:none;
+
+    
+
+}
+
+    .alert .message{
+
+        padding:5px;
+        background:#FEF0DB;
+        text-transform:uppercase;
+	    font:95% platform thin, "HelveticaNeue-UltraLight", sans-serif;
+        font-weight:bold;
+	    color:#444;
+        text-align:center;
+    }
+.week-day span {
+    text-decoration:none;
+
+}
+    .week-day .data {
+        display:none;
+    }
+    .week-day .container{
+        
+    }
+    .week-day .label{
+        color:#333;
+        font:110% platform light, sans-serif;
+    }
+    .week-day .reason {
+        float:right;
+        margin:30px 10px;
+        width:80%;
+        text-transform: uppercase;
+        font: 100% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+        font-weight: bold;
+        color: #444;
+        text-align:center;
+    }
+    .week-day .date{
+        float:left;
+        margin:0;
+        padding:0;
+        text-align:center;
+        color:#333;
+
+
+    }
+        .date .day{
+            text-transform:uppercase;
+            font:90% platform light, sans-serif;
+        }
+        .date .num{
+            display:block;
+            background:#238C49;
+            padding:5px 10px;
+            color:#FFF;
+            font:120% platform thin, sans-serif;
+        }
+        .date .month{
+            font:120% platform light, sans-serif;
+        }
+    .week-day .info {
+        margin:5px 20px;
+        float:right;
+         text-align:right;
+    }
+        .week-day .order{
+            margin:0;
+        }
+        .week-day .order span{
+            margin:0 0 0 20px;
+            font:220% platform thin, sans-serif;
+            color:#333;
+        }
+
+        .week-day .structure span{
+                margin:0;
+                font:95% platform light, sans-serif;
+                color:#333;
+               
+            }

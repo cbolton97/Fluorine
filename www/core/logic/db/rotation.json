@@ -2,21 +2,49 @@
 "title":"rotation",
 "content":"Hi, Rotation!",
 "rotations":[
-	
+
 	{
-		"date":"December 21, 2013",
-		"structure":"normal",
-		"order":"3"
+		"date":"April 05, 2014",
+		"day":"Tuesday",
+		"structure":"8_3",
+		"order":"1"
 	},
 	{
-		"date":"December 22, 2013",
-		"structure":"normal",
+		"date":"April 06, 2014",
+		"day":"Monday",
+		"structure":"8_3",
 		"order":"7"
 	},
 	{
-		"date":"December 23, 2013",
-		"structure":"normal",
+		"date":"April 07, 2014",
+		"day":"Tuesday",
+		"structure":"8_3",
+		"order":"1"
+	},
+	{
+		"date":"April 08, 2014",
+		"day":"Wednesday",
+		"structure":"9_3",
+		"order":"5"
+	},
+	{
+		"date":"April 09, 2014",
+		"day":"Thursday",
+		"structure":"8_3",
+		"order":"2"
+	},
+	{
+		"date":"April 10, 2014",
+		"day":"Friday",
+		"structure":"8_3",
 		"order":"6"
+	},
+	{
+		"date":"April 11, 2014",
+		"day":"Saturday",
+		"structure":"none",
+		"order":"1"
 	}
+
 	
 ]}

@@ -2,18 +2,7 @@
 	margin:0;
 	padding:0
 }
-.schedule-header{
-	margin:10px 0 0 0;
-	padding:0;
-	background:#EEE;
-	
-}
-	.schedule-header span{
-		margin:0;
-		padding:5px;
-		font:90% "robot light" sans-serif;
-		color:#007F0E;
-	}
+
 	.schedule-header-title{
 		float:left;
 	}
@@ -25,14 +14,7 @@
 	
 	padding:9em 0 0 0;
 }
-#schedule-table{
-	margin:auto;
-	padding:0;
-	width:95%;
-	background:#FFF;
-	border-radius:3px;
-	box-shadow:0px 3px 5px #CCC;
-}
+
 
 .schedule-item{
 	padding:3px 10px;
@@ -41,7 +23,8 @@
 .schedule-block{
 	margin:0;
 	float:left;
-	font:300% "robot light", sans-serif;
+	font:300% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+    font-weight:100;
 	color:#444;
 }
 .schedule-info {
@@ -50,12 +33,12 @@
 }
 .schedule-points {
     display:block;
-    font:150% "robot light", sans-serif;
+    font:150% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
 .schedule-dur{
     float:right;
-    font:80% "robot thin", sans-serif;
+    font:80% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
 .schedule-meta{
@@ -63,7 +46,7 @@
 	padding:3px 0;
 	border-top:1px solid #CCC;
 	border-bottom:1px solid #CCC;
-	font:90% "robot light", sans-serif;
+	font:90% "platform light", "HelveticaNeue-Light", sans-serif;
 }
 .schedule-title{
 	margin:0 5px 0 0;
@@ -72,12 +55,19 @@
 }
 
 
-.error-message-today,
-.error-message-tomorrow{
+
+.error-message span{
 	display:block;
-	padding:10px;
-	font:100% "robot light", sans-serif;
+	padding:10px 5px;
+    text-transform:none;
+	font:90% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
+}
+.banner-container {
+    display:block;
+    padding:10px;
+    background:#FEF0DB;
+    text-align:center;
 }
 
 

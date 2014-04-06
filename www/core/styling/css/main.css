@@ -1,14 +1,20 @@
-html,
+
 body{
 	margin:0;
 	padding:0 0 10px 0;
 	width:100%;
     height:100%;
-	background:#EEE;
+	background:#F2F2F2;
 }
 a {
     outline:none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-focus-ring-color:rgba(0, 0, 0, 0);
+}
+a:hover {
+    outline:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-focus-ring-color:rgba(0, 0, 0, 0);
 }
 .clear{
 	clear:both;
@@ -19,21 +25,36 @@ a {
 .wrapper-element{
 	z-index:100;
 }
-#wrapper-header{
-	margin:0;
-	padding:0;
-	width:100%;
-	height:auto;
-	background:#007F0E;
-    border-bottom:3px solid #252525;
-	/*box-shadow:0 1px 5px #222;*/
+.font-light{
+    font-family:"platform light", "HelveticaNeue-Light", sans-serif;
+}
+
+.font-thin{
+    font-family:"platform thin", "HelveticaNeue-UltraLight", sans-serif;
+     font-weight:100;
+}
+.action-back {
+    display:block;
+    float:left;
+    margin:8px 0px 8px 2px;
+    width:32px;
+    height:32px;
+    background-image:url('../images/ic_action_back.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:none;
+}
+.logo-container{
+    z-index:-100;
+    position:absolute;
+    margin:2px 0 0 0;
+    width:100%;
+    text-align:center;
 }
 .header-logo{
-    position:absolute;
-    left:50%;
-    margin:1px auto 1px -19px;
-    width:38px;
-    height:45px;
+    display:inline-block;
+    width:42.2px;
+    height:50px;
     background:url('../images/LogoHeader-fixed.png');
     background-repeat:no-repeat;
     background-size:contain;
@@ -44,7 +65,7 @@ a {
     
 
 }
-.header-refresh {
+.action-refresh {
     display:block;
     margin:8px;
     width:32px;
@@ -56,110 +77,192 @@ a {
 #wrapper-header-text{
 	text-align:left;
 }
-#wrapper-header-title{
-	margin:0 15px;
-	padding:0;
-	color:#FFF;
-	font:200% georgia, serif;
-	color:#FFF;
-	letter-spacing:4px;
-}
-#wrapper-header-sub{
-	margin-top:-3px;
-}
-.header-sub{
-	margin:0;
-	padding:0 1em 0 2px;
-	display:inline;
-	color:#FFF;
-	font:80% georgia, serif;
-	color:#FFF;
-}
-#wrapper-nav{
-	margin:0;
-	padding:0;
-	left:0;
-	width:100%;
-	height:35px;
-	background:#333;
-}
-#wrapper-nav ul{
-	margin:0;
-	padding:0;
-	list-style:none;
-	text-align:center;
-	height:100%;
-}
-#wrapper-nav ul a{
-	margin:0;
-	padding:0;
-	display:inline-block;
-	width:24%;
-	height:100%;
-	text-decoration:none;
-	color:#FFF;
-	font:80% sans-serif;
-	text-transform:uppercase;
-	
-}
+
+
+
 #wrapper-nav ul a li{
-	margin:10px 0;
+	margin:10px 0 0 0;
 	padding:0;
 	display:inline-block;
 }
-#content-container{
-	margin:0;
-	padding:5.2em 0 0 0;
-    -webkit-overflow-scrolling: touch;
-}
-.content-header {
-    display:block;
-    margin:15px 5px 5px 5px;
+.content-header,
+.schedule-header{
+	margin:5px 0 0 0;
 	padding:0;
-	font:90% "robot light" sans-serif;
-	color:#007F0E;
+	background:#F2F2F2;
 }
+    .content-header span,
+	.schedule-header span{
+		margin:0;
+		padding:5px;
+		font:100% "platform light", "HelveticaNeue-Light", sans-serif;
+		color:#333;
+	}
 .content-container {
-    margin:-10px auto 0 auto;
+    margin:0 auto;
 	padding:0;
 	width:95%;
 	background:#FFF;
-	border-radius:3px;
-	box-shadow:0px 3px 5px #CCC;
+	border-radius:5px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 
 }
 .content-container ul {
     list-style-type:none;
-    padding:10px;
+    padding:0 10px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
-.content-container ul li {
+.content-container ul li{
     display:block;
-    margin:0 0 10px 0;
+    margin:0;
+    padding:10px;
     clear:both;
+    position:relative;
+    border-bottom:1px solid #eee;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
 
+}
+
+.content-container ul li:last-child{
+    border-bottom:none;
 }
 
 .item-title {
-    font:bold 100% "robot light" sans-serif;
+    font-size:95%;
+    font-weight:bold;
     color:#333;
 }
 
 .item-name {
-    font:100% "robot light" sans-serif;
+    font-size:95%;
     color:#333;
 
 }
-.item-email {
-    font:90% "robot light" sans-serif;
+.item-link-container{
+    display:none;
+    padding:7px 0 0 0;
+    
+}
+.sites,
+.staff{
+    margin-top:0px;
+}
+.item-program {
+    display:block;
+}
+.item-link-container a{
+    display:inline-block;
+}
+.item-program,
+.item-link-container a {
+    padding:3px 10px 7px 3px;
     color:#007F0E;
+    background:transparent;
+    font-size:90%;
     text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+}
+.item-email {
 }
 .item-web {
-    font:90% "robot light" sans-serif;
-    color:#007F0E;
-    text-decoration:none;
 }
-/* Color Palette*/
+
+.app-title {
+    display:block;
+    margin:20px 0 5px 0;
+    font-size:120%;
+    text-align:center;
+}
+.app-desc {
+     display:block;
+     margin:10px auto;
+     
+}
+.desc{
+    display:block;
+    padding:5px;
+    color:#333;
+    font-size:85%;
+}
+.app-desc .author{
+    display:block;
+    padding:5px;
+    color:#333;
+    font-size:80%;
+}
+.app-contact {
+    margin:5px auto;
+    padding:0 0 5px 0;
+}
+.app-contact a {
+    display:block;
+    margin:5px auto;
+    padding:10px;
+    width:60%;
+    text-align:center;
+    background:#F5F5F5;
+    color:#333;
+    font-size:90%;
+    text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+    border:1px solid #EEE;
+
+}
+.app-twitter {
+    
+}
+.app-dev {
+    margin:10px 0 0 0;
+    text-align:center;
+
+}
+.current-version-pre{
+    font-size:120%;
+}
+.current-version {
+    font-size:120%;
+}
+.legal {
+    width:60%;
+    margin:5px auto;
+    display:block;
+    font-size:90%;
+
+}
+
+.psd-container {
+    margin:20px auto 0 auto;
+    background:#F788BB;
+    display:none;
+}
+.psd {
+    display:block;
+    padding:10px;
+    color:#FFF;
+    text-align:center;
+}
+.psd-title {
+    display:block;
+    margin:0 0 7px 0;
+    text-transform:uppercase;
+    font-size:110%;
+    font-weight:bold;
+}
+.psd-link {
+    margin:0 5px;
+    color:#FFF;
+}
+
+/* Color Palette
+link green: #007F0E
+dark green: #1A6B36
+background green: #238C49;
+background grey: #F2F2F2
+light grey: #F5F5F5
+peach: #FEF0DB
+pink: #CE6A96;
+light pink: #F788BB;
+ */
 
 
 
