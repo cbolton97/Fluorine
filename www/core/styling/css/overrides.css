@@ -1,11 +1,11 @@
 ﻿/*WEB*/
 @font-face {
     font-family: "platform thin";
-    src: url("../fonts/android/roboto-thin.ttf") format("opentype");   
+    src: url("../fonts/android/Roboto-Thin.ttf") format("opentype");   
     }
 @font-face {
     font-family: "platform light";
-    src: url("../fonts/android/roboto-light.ttf") format("opentype");   
+    src: url("../fonts/android/Roboto-Light.ttf") format("opentype");   
     }
 #wrapper-header{
 	margin:0;
