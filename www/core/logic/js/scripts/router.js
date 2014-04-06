@@ -120,6 +120,10 @@ $(document).on('click', '.route-initiator', function (event) {
         if ($(this).hasClass('week-day')) {
             $(this).addClass('selected');
         }
+        if (origin === "nav") {
+            $('#wrapper-nav ul a').removeClass("active");
+            $(this).addClass("active");
+        }
         event.returnValue = false;
        event.preventDefault();
     });
@@ -238,7 +242,7 @@ var currentLayer,
         About: function (currentLayer) {
             switch (currentLayer) {
                 case "About_View":
-                    window.scrollTo(0, 0);
+                   
                     $.getJSON('./core/logic/db/about.json', function (data) {
                         $('.current-version').html(data.version);
 
@@ -266,6 +270,8 @@ var currentLayer,
                 switch (initiator) {
 
                     case "nav":
+                        window.scrollTo(0, 0);
+
                         if (requestedPage !== currentPage) {
                             if (requestedStackPos === undefined) {
                                 cacheLayer = requestedLayer;
