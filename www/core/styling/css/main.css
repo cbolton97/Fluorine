@@ -48,7 +48,7 @@ a:hover {
 .logo-container{
     z-index:-100;
     position:absolute;
-    margin:4px 0 0 0;
+    margin:0;
     width:100%;
     text-align:center;
 }
