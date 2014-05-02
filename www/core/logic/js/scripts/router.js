@@ -15,9 +15,10 @@ $('.page-container, .layer-container').hide();
 
 //ios7 status bar fix
 function onDeviceReady() {
-    if (parseFloat(window.device.version) === 7.0) {
+    if (parseFloat(window.device.version) >= 7.0) {
         $('#wrapper-header').css('padding-top', '20px');
-    } document.addEventListener("backbutton", core["backbttn"], false);
+    } 
+    document.addEventListener("backbutton", core["backbttn"], false);
 }
 
 document.addEventListener('deviceready', onDeviceReady, false);
