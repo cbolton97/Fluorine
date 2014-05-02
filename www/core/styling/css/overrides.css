@@ -27,22 +27,19 @@
 	height:45px;
 	background:#F5F5F5;
     border-bottom:2px solid #DDD;
+    text-align:justify;
 
 }
 #wrapper-nav ul{
 	margin:0;
 	padding:0;
-
+    width:100%;
 	list-style:none;
-	text-align:center;
-	height:100%;
+   	height:100%;
 }
 #wrapper-nav ul a{
-	margin:0;
-	padding:3px 0 0 0;
+    padding:3px 20px;
 	display:inline-block;
-	width:24%;
-	height:100%;
 	text-decoration:none;
 	color:#858585;
 	font-size:100%;
@@ -52,6 +49,11 @@
 }
 #wrapper-nav ul .active{
     color:#007F0E;
+}
+#wrapper-nav ul:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 #content-container{
 	margin:0;

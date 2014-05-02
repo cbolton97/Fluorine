@@ -141,6 +141,7 @@ var currentLayer,
             //check the layer
             switch (currentLayer) {
                 case "Week_View":
+                    $('.action-back').attr('href', '#');
                     $('.week-data-loader').html(" ");
                     $('.action-back').hide();
                     createDate();
@@ -184,6 +185,7 @@ var currentLayer,
             //check the layer
             switch (currentLayer) {
                 case "Staff_List_View":
+                    $('.action-back').attr('href', '#');
                     $('.action-back').hide();
                     $('.list-data').html("");
                     $.getJSON('./core/logic/db/staff.json', function (data) {
@@ -210,8 +212,10 @@ var currentLayer,
             }
         },
         Discover: function (currentLayer) {
+            $('.action-back').attr('href', 'pop > routeLayer, Discover_list_View');
             switch (currentLayer) {
                 case "Discover_List_View":
+                    $('.action-back').attr('href', '#');
                     $('.action-back').hide();
                     $('.list-data').html("");
                     $.getJSON('./core/logic/db/sites.json', function (data) {
@@ -240,9 +244,10 @@ var currentLayer,
             }
         },
         About: function (currentLayer) {
+            $('.action-back').attr('href', 'pop > routeLayer, About_View');
             switch (currentLayer) {
                 case "About_View":
-                   
+                    $('.action-back').attr('href', '#');
                     $.getJSON('./core/logic/db/about.json', function (data) {
                         $('.current-version').html(data.version);
 
