@@ -16,8 +16,9 @@ function onDeviceReady() {
 document.addEventListener('deviceready', onDeviceReady, false);
 
 
-//global used to determine user input type ie touchstart
-var trigger = "click";
+//global used to determine user input type 
+//should be set to touchstart for production
+var trigger = "touchend";
 
 
 //phonegap watching for app resume
@@ -102,6 +103,7 @@ $('.web-data').on('click', '.item-web', function (event) {
         event.preventDefault();
         event.returnValue = false;
     });
+
 $(document).on('click', '.route-initiator', function (event) {
     event.returnValue = false;
     event.preventDefault();
@@ -165,6 +167,7 @@ var currentLayer,
                     });
                     break;
                 case "Day_View":
+                    window.scrollTo(0, 0);
                     $('.action-back').show();
                     var selectedDate = $('.week-data-loader').find('.selected').find('.data').html();
                     $.getJSON('./core/logic/db/rotation.json', function (data) {
@@ -327,6 +330,7 @@ var currentLayer,
                 core[currentPage](currentLayer);
             });
         },
+        //ouch
         scheduleError: function (reason, location, bay) {
             switch (location) {
                 case "Week_View":
@@ -448,6 +452,7 @@ var currentLayer,
                 } 
             });
         },
+        //Common, this is garbage and you know it
         displayListItem: function(itemType, source) {
         switch (itemType) {
             case "admin":
