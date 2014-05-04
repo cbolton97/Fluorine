@@ -1,13 +1,5 @@
 ﻿
-/*
-TO DO
 
--reorganize function arrays
--build routeLayer paths for refresh, push, pop
--build new Rotation logic
--implment existing page functions to new architecture
-
-*/
 //global func for taking core requests
 
 $('.page-container, .layer-container').hide();
@@ -36,8 +28,8 @@ function onResume() {
            sliceOrig = request.search(">"),
            sliceDest = request.search(","),
            origin = request.slice(0, sliceOrig).trim();
-        destination = request.slice(sliceOrig + 1, sliceDest).trim(),
-        data = request.slice(sliceDest + 1).trim();
+            destination = request.slice(sliceOrig + 1, sliceDest).trim(),
+            data = request.slice(sliceDest + 1).trim();
         console.log(request);
         core[destination](origin, data);
     }, 0);
@@ -103,10 +95,17 @@ $('.staff-list ul').on('click', 'li', function (event) {
         $(this).find('.item-link-container').show();
     }
 });
+$('.web-data').on('click', '.item-web', function (event) {
+        var link = $(this).attr('href');
+        var ref = window.open(link, '_system', 'location=yes');
+        //insert InAppBrowser code for phonegap.
+        event.preventDefault();
+        event.returnValue = false;
+    });
 $(document).on('click', '.route-initiator', function (event) {
     event.returnValue = false;
-    event.preventDefault();})
-    .on(trigger, '.route-initiator', function (event) {
+    event.preventDefault();
+}).on(trigger, '.route-initiator', function (event) {
         var request     = $(this).attr('href'),
             sliceOrig   = request.search(">"),
             sliceDest   = request.search(","),
@@ -249,6 +248,7 @@ var currentLayer,
             switch (currentLayer) {
                 case "About_View":
                     $('.action-back').attr('href', '#');
+                    $('.action-back').hide();
                     $.getJSON('./core/logic/db/about.json', function (data) {
                         $('.current-version').html(data.version);
 
@@ -419,8 +419,13 @@ var currentLayer,
             });
         },
         loadDay: function (date, day, structure, scheduleInfo) {
-            var dayType = scheduleInfo[0],
-                blockRotation = new Array(scheduleInfo[1], scheduleInfo[2], scheduleInfo[3], scheduleInfo[4]);
+            var sliceMonth = date.search(" "),
+            sliceNum = date.search(","),
+            dateMonth = date.slice(0, sliceMonth).trim();
+            dateNum = date.slice(sliceMonth + 1, sliceNum).trim(),
+            dateDay = day,
+            dayType = scheduleInfo[0],
+            blockRotation = new Array(scheduleInfo[1], scheduleInfo[2], scheduleInfo[3], scheduleInfo[4]);
             $('.day-data-loader').load('./core/styling/templates/Day_View_template.html #' + structure, function () {
 
                 if (!(structure === "none")) {
@@ -430,8 +435,11 @@ var currentLayer,
                         $('#timetable' + blockPlacer).html(blockRotation[i]);
                         blockPlacer++;
                     }
-                    $('.schedule-header-title').html(day + " " + date);
-                    $('.schedule-header-day').html("Day " + dayType);
+                    $(this).find('.data').html(date);
+                    $(this).find('.day').append(dateDay);
+                    $(this).find('.num').append(dateNum);
+                    $(this).find('.month').append(dateMonth);
+                    $(this).find('.dayType').append(dayType);
 
 
 
@@ -444,18 +452,17 @@ var currentLayer,
                 $('.admin-list-data').append("<li> <span class='font-light item-title'>" + source.title +
                 "</span><span class='item-name font-light'> " + source.name +
                 "</span><div class='item-link-container'><a href='mailto:" + source.email +
-                "' class='item-email route-initiator font-light'>Email: " + source.email + "</a> </div></li>");
+                "' class='item-email route-initiator-null font-light'>Email: " + source.email + "</a> </div></li>");
             break;
 
             case "teachers":
                 var teachersWebCheck = _.isUndefined(source.website);
-
                 if (!(teachersWebCheck)) {
                     $('.teachers-list-data').append("<li><span class='font-light item-name'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
-                            source.email + "' class='route-initiator font-light item-email'>Email: " + source.email + "</a><br /><a class='font-light route-initiator item-web' href='" + source.website + "'>Visit their website</a></div></li>");
+                            source.email + "' class='route-initiator-null font-light item-email'>Email: " + source.email + "</a><br /><a class='font-light route-initiator-null item-web' href='" + source.website + "'>Visit their website</a></div></li>");
                 } else {
                     $('.teachers-list-data').append("<li><span class='item-name font-light'>" + source.name +
-                        "</span><div class='item-link-container'><a route-initiator href='mailto:" + source.email + "' class='font-light item-email'> Email: " + source.email + "</a></div></li>");
+                        "</span><div class='item-link-container'><a route-initiator-null href='mailto:" + source.email + "' class='font-light item-email'> Email: " + source.email + "</a></div></li>");
                 }
             break;
 
@@ -465,26 +472,26 @@ var currentLayer,
                 if (!(supportWebCheck)) {
                     $('.support-list-data').append("<li> <span class='item-title font-light'>" + source.title +
                         "</span><br /> <span class='item-name font-light'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" +
-                        source.email + "' class='item-email route-initiator font-light'>Email: " + source.email + "</a><br /><a class='route-initiator item-web font-light' href='" + source.website + "'>Visit their website</a></div></li>");
+                        source.email + "' class='item-email route-initiator-null font-light'>Email: " + source.email + "</a><br /><a class='route-initiator-null item-web font-light' href='" + source.website + "'>Visit their website</a></div></li>");
                 } else {
                
                     $('.support-list-data').append("<li> <span class='item-title font-light'>" + source.title +
                         "</span><br /> <span class='item-name font-light'>" + source.name + "</span><div class='item-link-container'><a href='mailto:" + source.email +
-                        "' class='item-email route-initiator font-light'>Email: " + source.email + "</a></div></li>");
+                        "' class='item-email route-initiator-null font-light'>Email: " + source.email + "</a></div></li>");
                 }
             break;
 
             case "academics":
-                $('.academics-list-data').append("<li><a class='font-light item-program route-initiator item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $('.academics-list-data').append("<li><a class='font-light item-program route-initiator-null item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
             case "athletics":
-                $('.athletics-list-data').append("<li><a class='font-light item-program route-initiator item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $('.athletics-list-data').append("<li><a class='font-light item-program route-initiator-null item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
             case "arts":
-                $('.arts-list-data').append("<li><a class='font-light item-program route-initiator item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $('.arts-list-data').append("<li><a class='font-light item-program route-initiator-null item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
             case "workexperience":
-                $('.workexperience-list-data').append("<li><a class='font-light item-program route-initiator item-web' href='" + source.website + "'>" + source.name + "</a></li>");
+                $('.workexperience-list-data').append("<li><a class='font-light item-program route-initiator-null item-web' href='" + source.website + "'>" + source.name + "</a></li>");
             break;
             }
         }

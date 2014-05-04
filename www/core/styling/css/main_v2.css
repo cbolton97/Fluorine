@@ -1,4 +1,81 @@
-﻿.content-article{
+﻿#wrapper-header{
+    margin:0;
+    width:100%;
+    height:auto;
+    background:#238C49;
+}
+
+.header-container {
+    padding:1px 0;
+}
+#wrapper-nav{
+    position:fixed;
+    z-index: 100;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    background:#FFF;
+    border-top:2px solid #DDD;
+    text-align:justify;
+
+}
+#wrapper-nav ul{
+    margin:0;
+    padding:0;
+    width:100%;
+    list-style:none;
+    height:100%;
+}
+#wrapper-nav ul a{
+    padding:5px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:#858585;
+    font-size:100%;
+    text-transform:capitalize;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+    
+}
+#wrapper-nav ul .active{
+    color:#007F0E;
+}
+#wrapper-nav ul:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#content-container{
+    margin:0;
+    padding:50px 0;
+   overflow:hidden;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+.content-container{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+.alert-message {
+    text-transform:uppercase;
+    font:90% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+    font-weight:bold;
+    color:#444;
+}
+
+.error-message{
+    display:block;
+    padding:10px;
+    text-align:center;
+    text-transform:uppercase;
+    font:70% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+    font-weight:bold;
+    color:#444;
+}
+
+.content-article{
     display:block;
     margin:10px auto;
     padding:0;
@@ -6,6 +83,8 @@
     background:#FFF;
     border-radius:5px;
     text-decoration:none;
+    border:1px solid #DDD;
+    -webkit-tap-highlight-color:rgba(0,0,0,0.2);
 
     
 
@@ -16,7 +95,7 @@
         padding:5px;
         background:#FEF0DB;
         text-transform:uppercase;
-	    font:95% platform thin, "HelveticaNeue-UltraLight", sans-serif;
+	    font:95% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
         font-weight:bold;
 	    color:#444;
         text-align:center;
@@ -33,7 +112,7 @@
     }
     .week-day .label{
         color:#333;
-        font:110% platform light, sans-serif;
+        font:110% "platform light", "HelveticaNeue-Light", sans-serif;
     }
     .week-day .reason {
         float:right;
@@ -54,19 +133,22 @@
 
 
     }
-        .date .day{
+        .week-day .date .day{
             text-transform:uppercase;
-            font:90% platform light, sans-serif;
+            font:100% "platform light", "HelveticaNeue-Light", sans-serif;
         }
-        .date .num{
+        .week-day .date .num{
             display:block;
             background:#238C49;
-            padding:5px 10px;
+            margin:0 0 0 2px;
+            padding:8px 10px;
             color:#FFF;
-            font:120% platform thin, sans-serif;
+            border-radius:50%;
+            font:120% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
         }
-        .date .month{
-            font:120% platform light, sans-serif;
+        .week-day .date .month{
+            text-transform:uppercase;
+            font:105% "platform light", "HelveticaNeue-Light", sans-serif;
         }
     .week-day .info {
         margin:5px 20px;
@@ -78,13 +160,64 @@
         }
         .week-day .order span{
             margin:0 0 0 20px;
-            font:220% platform thin, sans-serif;
+            font:220% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
             color:#333;
         }
 
         .week-day .structure span{
                 margin:0;
-                font:95% platform light, sans-serif;
+                font:95% platform light, "HelveticaNeue-Light", sans-serif;
                 color:#333;
                
             }
+.schedule-header-container{
+    height: 165px;
+}
+.schedule-header{
+    margin:0;
+    position: fixed;
+    padding:15px 0;
+    width:100%;
+    background:#238C49;
+    /*background:#F2F2F2;*/
+    text-align:center;
+}
+    .schedule-header .date{
+        display:inline-block;
+        background:#FFF;
+        width:150px;
+        height:140px;
+        border-radius:50%;
+    }
+        .schedule-header .date .day-container{
+            padding-top:35px
+    }
+        .schedule-header .date .day{
+            text-transform:uppercase;
+            font:120% "platform light", "HelveticaNeue-Light", sans-serif;
+        }
+    .schedule-header .date .month-container{
+    }
+        .schedule-header .date .month{
+            text-transform:uppercase;
+            font:110% "platform light", "HelveticaNeue-Light", sans-serif;
+        }
+        .schedule-header .date .num{
+            font:120% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+        }
+     .schedule-header .date .dayType-container{
+    }
+        .schedule-header .date .dayTypePre{
+            text-transform:uppercase;
+            font:110% "platform light", "HelveticaNeue-Light", sans-serif;
+        }
+         .schedule-header .date .dayType{
+            font:120% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+        }
+.schedule-item-container{
+    position:relative;
+    z-index:1;
+    background:#FFF;
+    border-top:2px solid #DDD;
+}
+

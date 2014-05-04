@@ -48,14 +48,14 @@ a:hover {
 .logo-container{
     z-index:-100;
     position:absolute;
-    margin:0;
+    margin:4px 0 0 0;
     width:100%;
     text-align:center;
 }
 .header-logo{
     display:inline-block;
-    width:42.2px;
-    height:50px;
+    width:33px;
+    height:39.1px;
     background:url('../images/LogoHeader-fixed.png');
     background-repeat:no-repeat;
     background-size:contain;
@@ -86,8 +86,7 @@ a:hover {
 	padding:0;
 	display:inline-block;
 }
-.content-header,
-.schedule-header{
+.content-header{
 	margin:5px 0 0 0;
 	padding:0;
 	background:#F2F2F2;
@@ -106,17 +105,26 @@ a:hover {
 	background:#FFF;
 	border-radius:5px;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
+    border:1px solid #ddd;
 
 }
-.content-container ul {
-    list-style-type:none;
-    padding:0 10px;
+.list-container{
+    margin:0 auto;
+    padding:0;
+    width:100%;
+    background:#FFF;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
-.content-container ul li{
+.list-container ul {
+    list-style-type:none;
+    margin:5px 0 10px 0;
+    padding:0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.list-container ul li{
     display:block;
     margin:0;
-    padding:10px;
+    padding:15px;
     clear:both;
     position:relative;
     border-bottom:1px solid #eee;
@@ -124,7 +132,7 @@ a:hover {
 
 }
 
-.content-container ul li:last-child{
+.list-container ul li:last-child{
     border-bottom:none;
 }
 

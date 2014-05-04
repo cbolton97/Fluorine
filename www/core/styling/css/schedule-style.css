@@ -1,6 +1,6 @@
 #schedule-container{
 	margin:0;
-	padding:0
+	padding:0;
 }
 
 	.schedule-header-title{
@@ -23,7 +23,7 @@
 .schedule-block{
 	margin:0;
 	float:left;
-	font:300% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
+	font:275% "platform thin", "HelveticaNeue-UltraLight", sans-serif;
     font-weight:100;
 	color:#444;
 }
@@ -33,7 +33,7 @@
 }
 .schedule-points {
     display:block;
-    font:150% "platform light", "HelveticaNeue-Light", sans-serif;
+    font:145% "platform light", "HelveticaNeue-Light", sans-serif;
 	color:#333;
 }
 .schedule-dur{
