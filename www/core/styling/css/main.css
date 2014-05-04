@@ -99,13 +99,12 @@ a:hover {
 		color:#333;
 	}
 .content-container {
-    margin:0 auto;
-	padding:0;
-	width:95%;
-	background:#FFF;
-	border-radius:5px;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-    border:1px solid #ddd;
+     display:block;
+    margin:10px auto;
+    padding:0;
+    width:100%;
+    background:#FFF;
+    text-decoration:none;
 
 }
 .list-container{

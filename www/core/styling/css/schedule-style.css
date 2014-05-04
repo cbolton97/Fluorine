@@ -42,14 +42,15 @@
 	color:#333;
 }
 .schedule-meta{
-	margin:0 10px;
-	padding:3px 0;
-	border-top:1px solid #CCC;
-	border-bottom:1px solid #CCC;
-	font:90% "platform light", "HelveticaNeue-Light", sans-serif;
+	margin:0;
+	padding:10px;
+	/*border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;*/
+	background:#F2F2F2;
+	font:75% "platform light", "HelveticaNeue-Light", sans-serif;
+	text-align:center;
 }
 .schedule-title{
-	margin:0 5px 0 0;
 	color:#444;
 	font-weight:bold;
 }
