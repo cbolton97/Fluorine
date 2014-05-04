@@ -414,14 +414,16 @@ var currentLayer,
                         $(this).find('.order').append('<span>' + blockRotation[i] + '</span>');
                         blockPlacer++;
                     }
-                }else{console.log("caught one " + structure)}
+                }else{
+                    console.log("caught one " + structure);
+                }
 
             });
         },
         loadDay: function (date, day, structure, scheduleInfo) {
             var sliceMonth = date.search(" "),
             sliceNum = date.search(","),
-            dateMonth = date.slice(0, sliceMonth).trim();
+            dateMonth = date.slice(0, sliceMonth).trim().slice(0, 3),
             dateNum = date.slice(sliceMonth + 1, sliceNum).trim(),
             dateDay = day,
             dayType = scheduleInfo[0],
