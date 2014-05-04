@@ -88,19 +88,19 @@ a:hover {
 }
 .content-header{
 	margin:5px 0 0 0;
-	padding:0;
+	padding:7px 5px 5px 5px;
 	background:#F2F2F2;
 }
     .content-header span,
 	.schedule-header span{
 		margin:0;
 		padding:5px;
-		font:100% "platform light", "HelveticaNeue-Light", sans-serif;
+		font:95% "platform light", "HelveticaNeue-Light", sans-serif;
 		color:#333;
 	}
 .content-container {
      display:block;
-    margin:10px auto;
+    margin:auto;
     padding:0;
     width:100%;
     background:#FFF;
@@ -177,45 +177,40 @@ a:hover {
 
 .app-title {
     display:block;
-    margin:20px 0 5px 0;
-    font-size:120%;
+    margin:20px 0;
+    font-size:150%;
     text-align:center;
 }
 .app-desc {
      display:block;
-     margin:10px auto;
      
 }
 .desc{
     display:block;
-    padding:5px;
+    padding:10px;
     color:#333;
     font-size:85%;
 }
-.app-desc .author{
-    display:block;
-    padding:5px;
-    color:#333;
-    font-size:80%;
-}
-.app-contact {
-    margin:5px auto;
-    padding:0 0 5px 0;
-}
+
 .app-contact a {
     display:block;
-    margin:5px auto;
-    padding:10px;
-    width:60%;
-    text-align:center;
-    background:#F5F5F5;
-    color:#333;
-    font-size:90%;
-    text-decoration:none;
+    margin:0;
+    padding:15px;
+    border-bottom:1px solid #eee;
     -webkit-tap-highlight-color:rgba(0,0,0,0.2);
-    border:1px solid #EEE;
+    text-decoration:none;
 
 }
+.app-contact a:last-child{
+    border-bottom:none;
+}
+    .app-contact a span{
+        padding:3px 10px 7px 3px;
+        color:#007F0E;
+        background:transparent;
+        font-size:90%;
+        -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+    }
 .app-twitter {
     
 }

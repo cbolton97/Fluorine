@@ -28,11 +28,12 @@
     height:100%;
 }
 #wrapper-nav ul a{
-    padding:5px 20px;
+    padding:5px 0;
     display:inline-block;
     text-decoration:none;
     color:#858585;
     font-size:100%;
+    width:24%;
     text-transform:capitalize;
     -webkit-tap-highlight-color:rgba(0,0,0,0.2);
     
@@ -40,11 +41,7 @@
 #wrapper-nav ul .active{
     color:#007F0E;
 }
-#wrapper-nav ul:after{
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
+
 #content-container{
     margin:0;
     padding:50px 0 42px 0;
